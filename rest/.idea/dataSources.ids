@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - db@localhost" uuid="69bffca7-e8ff-496f-a94f-7841c9536207">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Sqlite (Xerial) - data.db" uuid="573f688d-bbe3-491a-a69f-24c2ee36b764">
+    <database-info product="SQLite" version="3.8.11" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native"/>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed"/>
+    <database-model serializer="dbm" rdbms="SQLITE" format-version="2.6">
+      <schema id="1">
+        <visible>1</visible>
+      </schema>
+      <table id="2" parent="1" name="albums"/>
+      <column id="3" parent="2" name="id">
+        <mandatory>1</mandatory>
+        <data-type>INTEGER(0,-1)|4</data-type>
+      </column>
+      <column id="4" parent="2" name="artist">
+        <mandatory>1</mandatory>
+        <data-type>TEXT(0,-1)|12</data-type>
+      </column>
+      <column id="5" parent="2" name="title">
+        <mandatory>1</mandatory>
+        <data-type>INT(0,-1)|4</data-type>
+      </column>
+      <key id="6" parent="2">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>
