@@ -62,7 +62,11 @@ $api->post('/users',function(Request $request) use ($app) {
     $userManager->insert($user);
     return new Response(null, 201);
 });
-
+$api->get('/users', function () use ($app) {
+    $sql = 'SELECT * FROM users';
+    $albums = $app['db']->fetchAll($sql);
+    return $app->json($albums);
+});
 //$api->get('/users/{value}', function (Request $value) use ($app) {
 //    $sql = 'SELECT * FROM users';
 //    $albums = $app['db']->fetchAll($sql);
